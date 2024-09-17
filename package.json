@@ -30,6 +30,7 @@
     "react-day-picker": "8.10.1",
     "react-dom": "^18",
     "react-hook-form": "^7.53.0",
+    "zustand": "^5.0.0-rc.2"
   },
   "devDependencies": {
     "typescript": "^5",
