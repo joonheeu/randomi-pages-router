@@ -1,40 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 실시간 채팅 애플리케이션
 
-## Getting Started
+이 프로젝트는 Next.js와 Socket.IO를 사용하여 구현된 실시간 채팅 애플리케이션입니다.
 
-First, run the development server:
+## 기능
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 기본 기능
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [x] 사용자 닉네임 설정
+- [x] 실시간 메시지 전송
+- [x] 메시지 타임스탬프 표시
+- [x] 다크 모드 지원
+- [x] 사용자 입력 중 표시
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 채팅 기능 확장
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [ ] 이모지 지원
+- [ ] 파일 업로드 기능
+- [ ] 메시지 검색 기능
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 사용자 관리
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [ ] 익명 로그인
+- [ ] 회원가입
+  - [ ] 이메일 인증
+  - [ ] 프로필 설정
+- [ ] 사용자 온라인/오프라인 상태 표시
 
-## Learn More
+### 채팅방 관리
 
-To learn more about Next.js, take a look at the following resources:
+- [ ] 채팅방 생성 및 참여
+- [ ] 랜덤 채팅 매칭
+  - [ ] 관심사 기반 매칭
+  - [ ] 1:1 랜덤 채팅
+  - [ ] 그룹 랜덤 채팅
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 데이터 관리
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [ ] 데이터베이스 연동
+  - [ ] 사용자 정보 저장
+  - [ ] 채팅 기록 저장
+- [ ] 채팅 기록 불러오기
 
-## Deploy on Vercel
+## 시작하기
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. 저장소를 클론합니다.
+2. 의존성을 설치합니다: `npm install`
+3. 개발 서버를 실행합니다: `npm run dev`
+4. 브라우저에서 `http://localhost:3000`으로 접속합니다.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 기술 스택
+
+- Next.js
+- Socket.IO
+- TypeScript
+- Tailwind CSS
+- Zustand (상태 관리)
+- 데이터베이스 (추후 결정: MongoDB, PostgreSQL 등)
+
+## 기여하기
+
+프로젝트에 기여하고 싶으시다면 이슈를 열거나 풀 리퀘스트를 보내주세요.
+
+## 라이선스
+
+이 프로젝트는 MIT 라이선스 하에 있습니다.
